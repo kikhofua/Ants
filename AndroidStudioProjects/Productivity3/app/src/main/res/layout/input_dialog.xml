@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="0dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskLayout"
+            app:hintTextAppearance="@style/AppTheme"
+            android:theme="@style/AppTheme">
+
+            <EditText
+                android:id="@+id/taskEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/add_task"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TimePicker>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveBtn"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>
